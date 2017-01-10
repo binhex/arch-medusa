@@ -56,8 +56,8 @@ source /root/custom.sh
 # create file with contets of here doc
 cat <<'EOF' > /tmp/permissions_heredoc
 # set permissions inside container
-chown -R "${PUID}":"${PGID}" /opt/sickrage /home/nobody
-chmod -R 775 /opt/sickrage /home/nobody
+chown -R "${PUID}":"${PGID}" /opt/medusa /home/nobody
+chmod -R 775 /opt/medusa /home/nobody
 
 EOF
 

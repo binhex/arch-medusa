@@ -5,7 +5,7 @@ set -e
 
 repo_name="pymedusa"
 app_name="Medusa"
-install_name="Medusa"
+install_name="medusa"
 
 # find latest release tag from github
 release_tag=$(curl -s "https://github.com/${repo_name}/${app_name}/releases" | grep -P -o -m 1 "(?<=/${repo_name}/${app_name}/releases/tag/)[^\"]+")

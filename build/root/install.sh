@@ -39,7 +39,7 @@ source /root/aor.sh
 ####
 
 # define aur packages
-aur_packages=""
+aur_packages="ffmpeg-headless"
 
 # call aur install script (arch user repo)
 source /root/aur.sh

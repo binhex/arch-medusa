@@ -19,7 +19,7 @@ mv /tmp/scripts-master/shell/arch/docker/*.sh /root/
 ####
 
 # define pacman packages
-pacman_packages="python2 python2-cheetah python2-pyopenssl libvpx"
+pacman_packages="python2 python2-cheetah python2-pyopenssl libx264 libvpx"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then

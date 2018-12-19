@@ -19,7 +19,7 @@ mv /tmp/scripts-master/shell/arch/docker/*.sh /root/
 ####
 
 # define pacman packages
-pacman_packages="python2 python2-cheetah python2-pyopenssl libx264 libvpx mediainfo"
+pacman_packages="ffmpeg python2 python2-cheetah python2-pyopenssl libx264 libvpx mediainfo"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -39,7 +39,7 @@ source /root/aor.sh
 ####
 
 # define aur packages
-aur_packages="ffmpeg-headless"
+aur_packages=""
 
 # call aur install script (arch user repo)
 source /root/aur.sh
@@ -47,7 +47,7 @@ source /root/aur.sh
 # github releases
 ####
 
-# download sickrage
+# download medusa
 /root/github.sh -df "github-download.zip" -dp "/tmp" -ep "/tmp/extracted" -ip "/opt/medusa" -go "pymedusa" -gr "Medusa" -rt "source"
 
 # container perms

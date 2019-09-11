@@ -19,10 +19,10 @@ mv /tmp/scripts-master/shell/arch/docker/*.sh /usr/local/bin/
 ####
 
 # define pacman packages
-pacman_packages="ffmpeg python2 python2-cheetah python2-pyopenssl libx264 libvpx mediainfo"
+pacman_packages="python python-babel python-mako unrar openssl libmediainfo"
 
 # install compiled packages using pacman
-if [[ ! -z "${pacman_packages}" ]]; then
+if [[ ! -z "${pacman_packages}" ]]; then 
 	pacman -S --needed $pacman_packages --noconfirm
 fi
 

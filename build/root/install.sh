@@ -55,8 +55,7 @@ source aur.sh
 ####
 
 # download medusa
-github.sh -df "github-download.zip" -dp "/tmp" -ep "/tmp/extracted" -ip "/opt/medusa" -go "pymedusa" -gr "Medusa" -rt "source"
-
+github.sh --install-path "/opt/medusa" --github-owner "pymedusa" --github-repo "Medusa" 
 # container perms
 ####
 

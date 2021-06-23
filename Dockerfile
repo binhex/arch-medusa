@@ -1,5 +1,5 @@
 FROM binhex/arch-base:latest
-MAINTAINER binhex
+LABEL org.opencontainers.image.authors="binhex"
 
 # additional files
 ##################
@@ -16,7 +16,7 @@ ADD build/root/*.sh /root/
 # make executable and run bash scripts to install app
 RUN chmod +x /root/*.sh && \
 	/bin/bash /root/install.sh
-		
+
 # docker settings
 #################
 

@@ -27,9 +27,6 @@ RUN chmod +x /root/*.sh && \
 # docker settings
 #################
 
-# expose port for http
-EXPOSE 8081
-
 # set permissions
 #################
 
